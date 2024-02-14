@@ -9,6 +9,10 @@ import { useRouter } from "next/router";
 
 export const NavbarLinks = [
   {
+    name: "Home",
+    link: "/",
+  },
+  {
     name: "Sevices",
     link: "services",
   },
@@ -67,7 +71,7 @@ const Header = ({ handleOrderPopup }) => {
         <div className="bg-gradient-to-r from-[#FFFFFF] to-[#a7a7a9]  ">
           <div className="container py-3 sm:py-0">
             <div className="flex justify-between items-center">
-              <div className="flex items-center gap-4 py-1 font-bold text-2xl">
+              <div className="flex items-center gap-4 py-2 font-bold text-2xl">
                 <Link href={"/"}  >
                   <img src={"/Logo.png"} alt="" className="h-16 max-w-full rounded-lg" />
                 </Link>
@@ -75,8 +79,13 @@ const Header = ({ handleOrderPopup }) => {
               </div>
               <div className="hidden md:block">
                 <ul className="flex items-center gap-6 animatedRight ">
+                <li className="py-4">
+                    <Link href="/" className={`text-decoration-none ${router.pathname==="/" ? "text-primary font-bold" : "" }`} >
+                      Home
+                    </Link>
+                  </li>
                   <li className="py-4">
-                    <Link href="services" className={`text-decoration-none ${router.pathname==="/services" ? "text-primary" : "" }`} >
+                    <Link href="services" className={`text-decoration-none ${router.pathname==="/services" ? "text-primary font-bold" : "" }`} >
                       Services
                     </Link>
                   </li>
@@ -86,18 +95,18 @@ const Header = ({ handleOrderPopup }) => {
                     </Link>
                   </li> */}
                   <li className="py-4">
-                    <Link href="blogs" className={`text-decoration-none ${router.pathname==="/blogs" ? "text-primary" : "" }`} >
+                    <Link href="blogs" className={`text-decoration-none ${router.pathname==="/blogs" ? "text-primary font-bold" : "" }`} >
                       Blogs
                     </Link>
                   </li>
                   
                   <li className="py-4">
-                    <Link href="about" className={`text-decoration-none ${router.pathname==="/about" ? "text-primary" : "" }`} >
+                    <Link href="about" className={`text-decoration-none ${router.pathname==="/about" ? "text-primary font-bold" : "" }`} >
                       About
                     </Link>
                   </li>
                   <li className="py-4">
-                    <Link href="careers" className={`text-decoration-none ${router.pathname==="/careers" ? "text-primary" : "" }`} >
+                    <Link href="careers" className={`text-decoration-none ${router.pathname==="/careers" ? "text-primary font-bold": "" }`} >
                       Careers
                     </Link>
                   </li>
@@ -129,9 +138,9 @@ const Header = ({ handleOrderPopup }) => {
                 </ul>
               </div>
               <div className="flex items-center gap-4">
-                <Link href={"contact"}>
+                <Link href={"contact"} className="md:block hidden ">
                 <button
-                  className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
+                  className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-black font-bold px-3 py-1 rounded-full"
                   
                 >
                  Contact us
