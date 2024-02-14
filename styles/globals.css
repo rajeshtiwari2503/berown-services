@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  .active {
+    @apply text-primary;
+  }
+}
+ 
+.animatedRight {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(100%); /* Start position at the bottom */
+  animation: slideFromRight 1.5s ease forwards;
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Starting position */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Moves up to its final position */
+  }
+}
+
+.animatedLeft {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(100%); /* Start position at the bottom */
+  animation: slideFromLeft 1.5s ease forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateY(100%); /* Starting position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Moves up to its final position */
+  }
+}
+.contactUsBg{
+  background-image: url("/contactUs.jpg");
+  object-fit: cover;
+   
+}
