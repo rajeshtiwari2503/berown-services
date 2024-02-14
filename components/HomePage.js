@@ -101,31 +101,49 @@ const HomePage = () => {
 
   return (
     <div className=''>
-      <div className="  sm:h-[980px] md:h-[680px]  relative bg-black bg-opacity-30">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute right-0 top-0 h-full w-full object-cover z-[-1]"
-        >
-          <source src={"https://sparetrade-bucket.s3.ap-south-1.amazonaws.com/videoHome.mp4-1704869755703-333177367"} type="video/mp4" />
-        </video>
-        <div className=" grid md:grid-cols-2 sm:grid-cols-1 h-full">
+
+      <div className=" grid md:grid-cols-2 sm:grid-cols-1">
+        <div className="  sm:h-[980px] md:h-[680px]    relative bg-black bg-opacity-30">
+          <div >
+            <video
+              autoPlay
+              loop
+              muted
+              className="absolute right-0 top-0 h-full  w-full object-cover z-[-1]"
+            >
+              <source src={"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/47Fj2US_gijjhliil/videoblocks-repair-air-conditioner_rxa2qmgyz__ddddd1b28dd1a2740556c85ed38db5e2__P360.mp4"} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div className="  sm:h-[980px] md:h-[680px]  relative bg-black bg-opacity-30">
+          <div >
+            <video
+              autoPlay
+              loop
+              muted
+              className="absolute right-0 top-0 h-full w-full object-cover z-[-1]"
+            >
+              <source src={"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/N_-wj6-wx/videoblocks-air-conditioner-fixing-cleanning-anual-check-with-technical-mechanic_sorigmnjc__df7085981155c93d7c4c05358730cbf2__P360.mp4"} />
+            </video>
+          </div>
+        </div>
+        </div>
+        <div className=" grid md:grid-cols-2 sm:grid-cols-1 h-full absolute right-0 top-0">
           <div className="h-full flex justify-center items-center p-4  ">
             <div className="container grid grid-cols-1 gap-2  ">
               <div className='animatedLeft text-secondary font-bold text-xl mt-8'>We are creative </div>
               <div className='animatedLeft text-white font-bold text-5xl'>Best IT <span className='text-secondary '>Solution</span></div>
               <div className='animatedLeft text-white font-bold text-5xl'> Company</div>
               <div className='animatedLeft mt-3 text-white text-xl'>
-                  
+
                 <TypeAnimation sequence={[
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative web development',1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative mobile app development',1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative e-commerce solutions',1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative UI/UX design',1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative digital marketing',1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative social media marketing',1000,
- 
+                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative web development', 1000,
+                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative mobile app development', 1000,
+                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative e-commerce solutions', 1000,
+                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative UI/UX design', 1000,
+                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative digital marketing', 1000,
+                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative social media marketing', 1000,
+
                 ]}
                   wrapper='span'
                   speed={50}
@@ -135,7 +153,7 @@ const HomePage = () => {
               </div>
               <div className='animatedLeft mt-4'>
                 <button
-                  className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1"
+                  className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-black font-bold px-3 py-1"
                   onClick={handleScroll}
                 >
                   Explore More
@@ -176,7 +194,7 @@ const HomePage = () => {
           </div> */}
         </div>
       </div>
-    </div>
+    
   )
 }
 

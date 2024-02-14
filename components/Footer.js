@@ -51,20 +51,20 @@ const Footer = () => {
                   {/* TravelloGo */}
                 </h1>
                 <p className="text-sm mt-4">
-                  Discover Lybley for web and app development, e-commerce solutions, CRM services, and impactful digital and social media marketing. Elevate your brand's digital presence with our comprehensive suite of tailored solutions designed to drive growth and engagement.
+                At my company, we offer popular AC repair services that cater to a wide range of customers. Our team of experienced technicians are well-versed in diagnosing AC issues and providing efficient solutions to restore optimal functionality.
                 </p>
                 <br />
                 <div className="flex items-center gap-3 ">
                   <FaLocationArrow />
-                  <p className="text-sm">A-9, A Block, Sector 59, Noida, Uttar Pradesh 201301</p>
+                  <p className="text-sm">Delhi</p>
                 </div>
                 <div className="flex items-center gap-3 mt-3">
                   <FaEnvelope />
-                  <p>help@lybley.com</p>
+                  <p>info@berown.com</p>
                 </div> 
                 <div className="flex items-center gap-3 mt-3">
                   <FaMobileAlt />
-                  <p>+91 7011071202</p>
+                  <p>+91-706-564-75252</p>
                 </div>
                 {/* social handles */}
 
