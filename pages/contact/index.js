@@ -11,62 +11,62 @@ import {
 const contact = () => {
 
   const [isLoading, setIsLoading] = useState(false);
-    const [msg, setMsg] = useState("");
-    const [formData, setFormData] = useState({
-      name: '',
-      contact: '',
-      email: '',
-      message: '',
-      website: 'IT Lybley.com'
+  const [msg, setMsg] = useState("");
+  const [formData, setFormData] = useState({
+    name: '',
+    contact: '',
+    email: '',
+    message: '',
+    website: 'IT Lybley.com'
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value
     });
-  
-    const handleInputChange = (event) => {
-      const { name, value } = event.target;
-      setFormData({
-        ...formData,
-        [name]: value
+  };
+
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      setIsLoading(true);
+      const response = await fetch('https://lybleybackend-production.up.railway.app/createContact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
       });
-    };
-  
-  
-  
-    const handleSubmit = async (event) => {
-      event.preventDefault();
-  
-      try {
-        setIsLoading(true);
-        const response = await fetch('https://lybleybackend-production.up.railway.app/createContact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-        setIsLoading(false);
-        if (response.ok) {
-          console.log('Message sent successfully');
-          setMsg("Message sent successfully")
-          setTimeout(() => {
-            setMsg("");
-          }, 3000)
-          // Show success message or perform other actions upon successful submission
-        } else {
-          console.error('Failed to send message');
-          // Handle error scenarios
-        }
-      } catch (error) {
-        console.error('Error sending message:', error);
+      setIsLoading(false);
+      if (response.ok) {
+        console.log('Message sent successfully');
+        setMsg("Message sent successfully")
+        setTimeout(() => {
+          setMsg("");
+        }, 3000)
+        // Show success message or perform other actions upon successful submission
+      } else {
+        console.error('Failed to send message');
         // Handle error scenarios
-        setIsLoading(false);
       }
-    };
+    } catch (error) {
+      console.error('Error sending message:', error);
+      // Handle error scenarios
+      setIsLoading(false);
+    }
+  };
   return (
     <>
       <div className='  bg-cover bg-center  h-[370px]' style={{ backgroundImage: "url(contactUs.jpg)", marginTop: "72px" }}>
 
       </div>
       <div className=' flex justify-center items-center  '>
-        <div className='flex justify-center items-center p-4 bg-gradient-to-r from-[#f7bab7] to-[#c7eae4] w-[280px] rounded-b-lg text-white font-bold text-5xl '>
+        <div className='flex justify-center items-center p-4 bg-gradient-to-r from-[#f7bab7] to-[#c7eae4] w-[280px] rounded-b-lg text-black font-bold text-5xl '>
           Contact us
         </div>
       </div>
@@ -99,24 +99,29 @@ const contact = () => {
               <div className='mt-4'>
                 <div>Have a question, feedback, or just want to say hello? We'd love to hear from you! Use the following methods to get in touch with us:</div>
                 <div className='mt-2 font-bold text-3xl'>Contact Information</div>
+                <div className='mt-4'>
+                  <div className='p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>BEROWN SERVICES</div>
+                </div>
                 <div className='mt-2 font-bold text-2xl'>Address:</div>
-                <div className='font-bold'>Lybley India Pvt Ltd.</div>
-                <div>A-9, A Block, Sector 59, Noida, Uttar Pradesh 201301</div>
+                
+                <div>
+                  <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>Delhi</div>
+                </div>
                 <div className='mt-2 font-bold text-2xl'>Email :</div>
-                <div>help@lybley.com</div>
+                <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>info@berown.com</div>
                 <div className='mt-2 font-bold text-2xl'>Contact No. :</div>
-                <div>7011071202</div>
+                <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>70656475252</div>
                 <div className='mt-2 font-bold text-2xl'>Social Media</div>
                 <div>Connect with us on social media for updates, news, and more:</div>
-                <div className="flex items-center gap-3 mt-4 ">
+                <div className="flex items-center gap-3 mt-4 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]">
                   <Link href="#">
-                    <FaInstagram className="text-3xl" />
+                    <FaInstagram className="text-3xl text-primary" />
                   </Link>
                   <Link href="#">
-                    <FaFacebook className="text-3xl" />
+                    <FaFacebook className="text-3xl text-primary" />
                   </Link>
                   <Link href="#">
-                    <FaLinkedin className="text-3xl" />
+                    <FaLinkedin className="text-3xl text-primary" />
                   </Link>
                 </div>
               </div>

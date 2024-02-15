@@ -46,3 +46,21 @@
   object-fit: cover;
    
 }
+
+.whatsAppCss{
+  position: fixed;
+   bottom: 0;
+   right: 0;
+   margin-bottom: 20px;
+   margin-right: 20px;
+ }
+ .whatsAppCssSize{
+   font-size: 60px !important;
+ }
+ @media(max-width:768px){
+
+  .whatsAppCssSize{
+    font-size: 40px !important;
+  }
+   
+}
