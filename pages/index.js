@@ -6,6 +6,7 @@ import Head from 'next/head'
 import Services from './services'
 import Testimonial from '@/components/Testomonials'
 import Clients from '@/components/Clients'
+import WhatsApp from '@/components/Whatsapp'
 
 
 
@@ -29,10 +30,12 @@ export default function Home() {
           <HomePage />
           <Services home={true} />
           <Banner />
-          <Clients />
+          {/* <Clients /> */}
           <Testimonial />
+        
         </div>
-
+        <div className='whatsAppCss'><WhatsApp />
+          </div>
       </main>
     </>
   )

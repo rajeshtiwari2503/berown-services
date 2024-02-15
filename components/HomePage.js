@@ -101,48 +101,33 @@ const HomePage = () => {
 
   return (
     <div className=''>
+          <div className="  sm:h-[980px] md:h-[680px]  relative bg-black bg-opacity-30">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute right-0 top-0 h-full w-full object-cover z-[-1]"
+        >
+          {/* <source src={"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/N_-wj6-wx/videoblocks-air-conditioner-fixing-cleanning-anual-check-with-technical-mechanic_sorigmnjc__df7085981155c93d7c4c05358730cbf2__P360.mp4"} /> */}
+          <source src={"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/47Fj2US_gijjhliil/videoblocks-repair-air-conditioner_rxa2qmgyz__ddddd1b28dd1a2740556c85ed38db5e2__P360.mp4"} type="video/mp4" />
 
-      <div className=" grid md:grid-cols-2 sm:grid-cols-1">
-        <div className="  sm:h-[980px] md:h-[680px]    relative bg-black bg-opacity-30">
-          <div >
-            <video
-              autoPlay
-              loop
-              muted
-              className="absolute right-0 top-0 h-full  w-full object-cover z-[-1]"
-            >
-              <source src={"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/47Fj2US_gijjhliil/videoblocks-repair-air-conditioner_rxa2qmgyz__ddddd1b28dd1a2740556c85ed38db5e2__P360.mp4"} type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <div className="  sm:h-[980px] md:h-[680px]  relative bg-black bg-opacity-30">
-          <div >
-            <video
-              autoPlay
-              loop
-              muted
-              className="absolute right-0 top-0 h-full w-full object-cover z-[-1]"
-            >
-              <source src={"https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/N_-wj6-wx/videoblocks-air-conditioner-fixing-cleanning-anual-check-with-technical-mechanic_sorigmnjc__df7085981155c93d7c4c05358730cbf2__P360.mp4"} />
-            </video>
-          </div>
-        </div>
-        </div>
-        <div className=" grid md:grid-cols-2 sm:grid-cols-1 h-full absolute right-0 top-0">
+        </video>
+        <div className=" grid md:grid-cols-2 sm:grid-cols-1 h-full">
           <div className="h-full flex justify-center items-center p-4  ">
             <div className="container grid grid-cols-1 gap-2  ">
               <div className='animatedLeft text-secondary font-bold text-xl mt-8'>We are creative </div>
-              <div className='animatedLeft text-white font-bold text-5xl'>Best IT <span className='text-secondary '>Solution</span></div>
-              <div className='animatedLeft text-white font-bold text-5xl'> Company</div>
-              <div className='animatedLeft mt-3 text-white text-xl'>
+              <div className='animatedLeft text-white font-bold text-3xl'>Solutions for an every repair problem </div>
+ 
+              <div className='animatedLeft mt-3 text-white text-sm md:text-xl'>
 
                 <TypeAnimation sequence={[
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative web development', 1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative mobile app development', 1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative e-commerce solutions', 1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative UI/UX design', 1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative digital marketing', 1000,
-                  'Welcome to Lybley, where innovation meets excellence! As a leading provider of comprehensive digital solutions, we are your one-stop destination for transformative social media marketing', 1000,
+                 "Welcome to BEROWN SERVICES ,for complex or potentially hazardous repairs, it's advisable to consult a professional technician. Additionally, always refer to the appliance's user manual for specific troubleshooting steps and safety guidelines. Safety should always be the top priority when dealing with home appliance repairs. Air Condition", 1000,
+                 "Welcome to BEROWN SERVICES ,for complex or potentially hazardous repairs, it's advisable to consult a professional technician. Additionally, always refer to the appliance's user manual for specific troubleshooting steps and safety guidelines. Safety should always be the top priority when dealing with home appliance repairs. Washing Machine", 1000,
+                 "Welcome to BEROWN SERVICES ,for complex or potentially hazardous repairs, it's advisable to consult a professional technician. Additionally, always refer to the appliance's user manual for specific troubleshooting steps and safety guidelines. Safety should always be the top priority when dealing with home appliance repairs. Microwave", 1000,
+                 "Welcome to BEROWN SERVICES ,for complex or potentially hazardous repairs, it's advisable to consult a professional technician. Additionally, always refer to the appliance's user manual for specific troubleshooting steps and safety guidelines. Safety should always be the top priority when dealing with home appliance repairs. Geyser", 1000,
+                 "Welcome to BEROWN SERVICES ,for complex or potentially hazardous repairs, it's advisable to consult a professional technician. Additionally, always refer to the appliance's user manual for specific troubleshooting steps and safety guidelines. Safety should always be the top priority when dealing with home appliance repairs. Fan", 1000,
+                 "Welcome to BEROWN SERVICES ,for complex or potentially hazardous repairs, it's advisable to consult a professional technician. Additionally, always refer to the appliance's user manual for specific troubleshooting steps and safety guidelines. Safety should always be the top priority when dealing with home appliance repairs. Dishwasher", 1000,
+                 "Welcome to BEROWN SERVICES ,for complex or potentially hazardous repairs, it's advisable to consult a professional technician. Additionally, always refer to the appliance's user manual for specific troubleshooting steps and safety guidelines. Safety should always be the top priority when dealing with home appliance repairs. All Home Applinces", 1000,
 
                 ]}
                   wrapper='span'
@@ -153,47 +138,21 @@ const HomePage = () => {
               </div>
               <div className='animatedLeft mt-4'>
                 <button
-                  className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-black font-bold px-3 py-1"
+                  className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1"
                   onClick={handleScroll}
                 >
                   Explore More
                 </button>
-                {/* <button
-                                    className="mx-4 bg-gradient-to-r from-white to-white hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-secondary px-3 py-1  "
-                                    onClick={handleScroll}
-                                >
-                                    Explore More
-                                </button> */}
+
               </div>
             </div>
           </div>
-          {/* <div
-            data-aos="zoom-in"
-            data-aos-duration="300"
-            className="grid grid-cols-1 max-w-[500px] mx-auto   justify-center items-center"
-          >
-            <Slider {...settings}>
-              {testimonialData.map(({ id, title, description, image, link }) => {
-                return (
-                  <div key={id} className="my-6">
-                    <div className="flex flex-col justify-center items-center gap-4 text-center p-4 mx-4 rounded-xl dark:bg-gray-800 relative">
-                      <Link href={link}>
-                        <img
-                          src={image}
-                          alt=""
-                          className="rounded-full h-[200px] block mx-auto"
-                        />
-                        <h1 className="text-xl text-white font-bold">{title}</h1>
-                        <p className="text-white text-sm">{description}</p>
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
-            </Slider>
-          </div> */}
+
         </div>
       </div>
+        </div>
+       
+    
     
   )
 }

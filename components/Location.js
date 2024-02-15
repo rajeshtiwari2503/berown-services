@@ -23,6 +23,7 @@ const Location = () => {
           </div>
         </div>
       </section>
+     
     </>
   );
 };

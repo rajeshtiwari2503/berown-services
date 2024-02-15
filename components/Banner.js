@@ -6,19 +6,16 @@ import { IoFastFoodSharp } from "react-icons/io5";
 
 
 const techLogo = [
-  { logo: "mongo.png", name: "Mongo DB" },
-  { logo: "express.png", name: "Express JS" },
-  { logo: "react.png", name: "React JS" },
-  { logo: "node.png", name: "Node JS" },
-  { logo: "reactNative.png", name: "React Native" },
-  { logo: "next.svg", name: "Next JS" },
-  { logo: "javascript.png", name: "JavaScript" },
-  { logo: "tailwind.png", name: "Tailwind CSS" },
-  { logo: "bootstrap.png", name: "Bootstrap" },
-  { logo: "firebase.png", name: "Firebase" },
-  { logo: "aws.png", name: "AWS" },
-  { logo: "vercel.svg", name: "Vercel " },
- 
+  { logo: "ac.svg", name: "AC" },
+  { logo: "fridge.svg", name: "Fridge" },
+  { logo: "microwave.svg", name: "Microwave" },
+  { logo: "washingM.svg", name: "Washing Machine" },
+  { logo: "sound.svg", name: "Sound Services" },
+  { logo: "fan.svg", name: "Electric Fan" },
+  { logo: "bulb.png", name: "Electric Bulb" },
+  { logo: "6749976.png", name: "Geyser " },
+   
+
 ]
 const Banner = () => {
   return (
@@ -41,13 +38,15 @@ const Banner = () => {
                   data-aos="fade-up"
                   className="text-3xl sm:text-4xl font-bold"
                 >
-                  Technologies We Leverage
+                  Solutions for an every repair problem
                 </h1>
+                <h3  className="text-1xl sm:text-2xl font-bold mt-5">   What is HVAC?</h3>
                 <p
                   data-aos="fade-up"
                   className="text-sm text-gray-500 tracking-wide mt-4 leading-6"
                 >
-                  At Lybley we believe in harnessing the power of cutting-edge technologies to craft innovative solutions tailored to meet your needs. Our team excels in utilizing a diverse range of tools and frameworks to deliver top-notch software solutions. Below are some of the key technologies we specialize in
+
+                  HVAC is short for Heating, Ventilation and Air Conditioning. HVAC is most often used to depict the whole heating and cooling system consisting of the duct work, air filters, humidification controls, and registers.
                   <br />
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 mt-8 gap-4 items-center">
@@ -60,10 +59,14 @@ const Banner = () => {
 
                               className="text-4xl flex items-center justify-center cursor-pointer    shadow-md p-4 rounded-md bg-violet-100 dark:bg-violet-400"
                             >
-                              <img src={item?.logo} alt="image" className="  h-[50px]  "/>
-                              <p className="invisible group-hover:visible absolute  bottom-0 text-xl font-bold text-center text-primary">
+                               <p className="  mb-2  absolute   top-0  text-sm font-bold text-center text-primary">
                                 {item?.name}
                               </p>
+                              <img src={item?.logo} alt="image" className="  h-[50px]  mt-2 " />
+                              {/* <p className="invisible group-hover:visible absolute  bottom-0 text-xl font-bold text-center text-primary">
+                                {item?.name}
+                              </p> */}
+                             
                             </div>
                           </div>
                         </div>
