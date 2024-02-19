@@ -10,11 +10,11 @@ const techLogo = [
   { logo: "fridge.svg", name: "Fridge" },
   { logo: "microwave.svg", name: "Microwave" },
   { logo: "washingM.svg", name: "Washing Machine" },
-  { logo: "sound.svg", name: "Sound Services" },
-  { logo: "fan.svg", name: "Electric Fan" },
-  { logo: "bulb.png", name: "Electric Bulb" },
+  { logo: "cctv.png", name: "C C TV  " },
+  { logo: "ro.png", name: "R O" },
   { logo: "6749976.png", name: "Geyser " },
    
+  { logo: "services.svg", name: "All services" },
 
 ]
 const Banner = () => {
@@ -27,8 +27,8 @@ const Banner = () => {
               {/* Image section */}
               <div data-aos="flip-up">
                 <img
-                  src={"/programming.png"}
-                  alt="eCommerce"
+                  src={"/appliances.png"}
+                  alt="appliances"
                   className="max-w-[450px] h-[450px]  w-full mx-0 drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
                 />
               </div>

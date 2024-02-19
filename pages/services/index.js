@@ -4,49 +4,61 @@ import React from "react";
 
 const serviceData = [
   {
-    id: 1,
-    image: "webDevelopment.png",
-    title: "Web Development",
-    link:"webDevelopment",
-    description: "Empowering your digital presence. We specialize in bespoke web development, creating standout websites that blend innovation and functionality, ensuring your online success"
-  },
-  {
-    id: 2,
-    image: "mobileApp.png",
-    title: "Mobile App Development",
-    link:"mobileAppDevelopment",
-    description: "Transforming ideas into dynamic apps. Our mobile app development crafts innovative solutions for your digital needs, ensuring seamless user experiences that resonate and captivate your audience"
+    id: 5,
+    image: "appliances.png",
+    title: "Commercial   Service",
+    link:"/",
+    description: "Unlock the full potential of your commercial appliances with our comprehensive service solutions"
 
-  },
-  {
-    id: 3,
-    image: "digitalMarketing.png",
-    title: "Digital Marketing",
-    link:"digitalMarketing",
-    description: "Our digital marketing strategies are designed to propel your brand forward, leveraging targeted approaches that maximize visibility and engagement, ensuring your success in the digital sphere"
-
-  },
-  {
-    id: 4,
-    image: "uiUx.png",
-    title: "UI/UX Design",
-    link:"uiUxDesign",
-    description: "Crafting captivating experiences. Our UI/UX design expertise creates intuitive interfaces that blend creativity and functionality, ensuring memorable digital experiences"
   },
   {
     id: 5,
-    image: "eCommerse.png",
-    title: "E-Commerce Solution",
-    link:"eCommerceSolution",
-    description: "Transforming online retail experiences. Our tailored e-commerce solutions seamlessly merge intuitive design and robust functionality, elevating your customers' shopping journey"
+    image: "appliances.png",
+    title: "Residential   Service",
+    link:"/",
+    description: "From residential to commercial and industrial, our appliance services cater to every setting's needs"
 
   },
+  // {
+  //   id: 5,
+  //   image: "appliances.png",
+  //   title: "Industrial   Service",
+  //   link:"/",
+  //   description: "From industrial complexes to residential properties, our appliance services deliver excellence across all sectors."
+
+  // },
+  
   {
-    id: 6,
-    image: "mediaMarketing.png",
-    title: "Social Media Marketing",
-    link:"mediaMarketing",
-    description: "Boosting your online presence. Our social media strategies craft engaging campaigns, amplifying your brand's voice to authentically connect with your audience"
+    id: 1,
+    image: "acImage1.jpg",
+    title: "A C Repair",
+    link:"/",
+    description: "AC Service is a comprehensive maintenance program meticulously crafted to cater to the unique needs of air conditioning units  establishments"
+  },
+  {
+    id: 2,
+    image: "microWave1.jpg",
+    title: "Microwave Repair",
+    link:"/",
+    description: "Experience seamless cooking again with our specialized microwave repair services, tailored for both residential and commercial kitchens."
+
+  },
+ 
+  {
+    id: 4,
+    image: "tv1.jpg",
+    title: "T V Repair",
+    link:"/",
+    description: "Restore your TV's brilliance with our expert repair services, ensuring uninterrupted entertainment at home or in your business."
+  },
+ 
+  {
+    id: 3,
+    image: "services.svg",
+    title: "All Repairing services",
+    link:"/",
+    description: "From plumbing to electrical, and everything in between, our home services cover all your household needs."
+
   },
 ];
 
@@ -70,7 +82,7 @@ const Services = ({ home }) => {
               ))}
             </div> </>
             : <>
-              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 flex items-center justify-between">
+              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2   items-center justify-between">
                 <div>
                   <h1 className=" mt-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">
                     Our Services
@@ -80,11 +92,11 @@ const Services = ({ home }) => {
                     Explore More
                   </button>
                 </div>
-                <div>
-                  <img src="services.png" className="mx-auto h-[200px]  md:h-[400px]" alt="image" />
+                <div className="mt-5">
+                  <img src="services.svg" className="mx-auto h-[200px]  md:h-[400px]" alt="image" />
                 </div>
               </div>
-              <h3 className="text-center font-bold py-3 mt-8 text-2xl text-secondary">Discover the key features</h3>
+              <h3 className="text-center font-bold py-3  text-2xl text-secondary">Discover the key features</h3>
               <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-3">
                 {serviceData.map((item, index) => (
                   <Card isServices={true} key={item.id} index={index} {...item} />

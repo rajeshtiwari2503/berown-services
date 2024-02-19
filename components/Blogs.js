@@ -1,26 +1,38 @@
 import React, { useEffect, useState } from "react";
 
 import Card from "./Card";
-import axios from "axios";
+ 
 
-
+const blogs=[
+  {
+    id:1,
+    image:"services.svg",  
+    title:"Electrical",  
+     description:"Lighting up your life with safe and efficient wiring solutions.",
+  },
+  {
+    id:1,
+    image:"services.svg",  
+    title:"HVAC",  
+     description:"Keeping your home cozy in winter and cool in summer.",
+  },
+  {
+    id:1,
+    image:"services.svg",  
+    title:"Appliance Repair",  
+     description:"Bringing your malfunctioning appliances back to life for seamless daily living.",
+  },
+  {
+    id:1,
+    image:"services.svg",  
+    title:"Renovations",  
+     description:"Breathing new life into your home with expert remodeling and renovations",
+  },
+  
+]
 const Blogs = (props) => {
 
-  const [blogs, setBlogs] = useState([])
-  useEffect(() => {
-    getAllBlogs()
-  }, [])
-
-  const getAllBlogs = async () => {
-    try {
-      let response = await axios.get("https://lybleybackend-production.up.railway.app/getAllBlogs")
-      let {data} = response 
-      setBlogs(data)
-    }
-    catch (err) {
-      console.log(err);
-    }
-  }
+  
   return (
     <>
       <div className="dark:bg-gray-900 dark:text-white py-10">

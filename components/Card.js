@@ -10,7 +10,7 @@ const  Card = ({_id ,isServices, image, date, title, link, description, author,i
        href={isServices ?`${link}` :`/blogDetail?id=${_id}`}
         state={{ image, date, title, description, author,link }}
       >
-        <div className={`p-4 mt-4 shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg m-2`}>
+        <div className={`p-4 mt-4  shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg m-2`}>
           <div className="overflow-hidden">
             <img
               src={image}
@@ -19,7 +19,7 @@ const  Card = ({_id ,isServices, image, date, title, link, description, author,i
             />
           </div>
         {isServices  
-       ? <div className="space-y-2 py-1 flex justify-center">
+       ? <div className="space-y-2 h-32 py-1 flex justify-center">
         <div>
             <h1 className="line-clamp-1 text-center font-bold">{title}</h1>
             <p className="text-center">{description}</p>

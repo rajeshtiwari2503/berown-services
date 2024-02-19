@@ -17,7 +17,7 @@ const ResponsiveHeader = ({ showMenu, setShowMenu }) => {
       <div className="card">
         <div className="flex items-center justify-start gap-3">
         <Link href={"/"}  onClick={() => setShowMenu(false)} >
-                  <img src={"/Logo.png"} alt="" className="h-16 max-w-full rounded-lg" />
+                  <img src={"/Logo.png"} alt="" className="h-12 max-w-full rounded-lg" />
                 </Link>
         </div>
         <nav className="mt-12">
