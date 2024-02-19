@@ -28,8 +28,9 @@ export default function Home() {
       >
         <div >
           <HomePage />
-          <Services home={true} />
           <Banner />
+          <Services home={true} />
+        
           {/* <Clients /> */}
           <Testimonial />
         

@@ -27,16 +27,50 @@ const FooterLinks = [
     title: "Blogs",
     link: "blogs",
   },
-  {
-    title: "Careers",
-    link: "careers",
-  },
+  
   {
     title: "Contact us",
     link: "contact",
   },
 ];
 
+const ourServices=[
+  {
+    title: "A C  ",
+    link: "/services",
+  },
+  {
+    title: "Fridge",
+    link: "/services",
+  },
+  {
+    title: "Microwave",
+    link: "/services",
+  },
+  {
+    title: "Washing Machine",
+    link: "/services",
+  },
+  {
+    title: "C C TV ",
+    link: "/services",
+  },
+  {
+    title: "R O ",
+    link: "/services",
+  },
+  
+  {
+    title: "Geyser",
+    link: "/services",
+  }
+  ,
+  // {
+   
+  //   title: "All services",
+  //   link: "/services",
+  // },
+]
 const Footer = () => {
   return (
     <>
@@ -56,7 +90,7 @@ const Footer = () => {
                 <br />
                 <div className="flex items-center gap-3 ">
                   <FaLocationArrow />
-                  <p className="text-sm">Delhi</p>
+                  <p className="text-sm">Noida</p>
                 </div>
                 <div className="flex items-center gap-3 mt-3">
                   <FaEnvelope />
@@ -90,6 +124,26 @@ const Footer = () => {
                     </ul>
                   </div>
                 </div>
+                <div>
+                  <div className="py-8 px-4">
+                    <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
+                    Our Services
+                    </h1>
+                    <ul className="flex flex-col gap-3">
+                      {ourServices.map((link,index) => (
+                        <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200" key={index}>
+                          <Link
+                            href={link.link}
+                            onClick={() => window.scrollTo(0, 0)}
+                          >
+                            <span>&#11162;</span>
+                            <span>{link.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
                 <div className="block md:hidden">
                 <div className="py-8 px-4">
                     <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
@@ -103,7 +157,7 @@ const Footer = () => {
                    </div>
                 </div>
               </div>
-                <div className="col-span-2">
+                <div className="">
                   <div className="py-8 px-4">
                     <div className="rounded-xl  ">
                       <iframe

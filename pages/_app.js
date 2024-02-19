@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import '@/styles/globals.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
@@ -17,9 +17,10 @@ export default function App({ Component, pageProps }) {
     });
     AOS.refresh();
   }, []);
+  
   return (<>
-    <Header />
-    <Component {...pageProps} />
+    <Header  />
+    <Component   {...pageProps} />
     <Footer />
   </>
   )

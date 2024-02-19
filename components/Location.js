@@ -12,9 +12,10 @@ const Location = () => {
 
           <div className="rounded-xl mt-4 pb-8">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.783672779409!2d77.36534197457178!3d28.606265885274766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5e6156c623%3A0xfc1292095a4933f9!2sLYBLEY!5e0!3m2!1sen!2sin!4v1704344578953!5m2!1sen!2sin"
-              height="360"
+                        src="https://maps.google.com/maps?q=Berown%20Services%2C%2011%2C%20Samrath%20Chock%2C%20Ghaziabad%20NCR%20Region%2C%20Uttar%20Pradesh%20201009&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"
+              
               width={"100%"}
+              height={"300px"}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

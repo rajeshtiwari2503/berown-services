@@ -105,7 +105,7 @@ const contact = () => {
                 <div className='mt-2 font-bold text-2xl'>Address:</div>
                 
                 <div>
-                  <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>Delhi</div>
+                  <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>Noida</div>
                 </div>
                 <div className='mt-2 font-bold text-2xl'>Email :</div>
                 <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>info@berown.com</div>
