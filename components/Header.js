@@ -57,26 +57,21 @@ const Header = ( ) => {
   const hrefggleMenu = () => {
     setShowMenu(!showMenu);
   };
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [showHeader, setShowHeader] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      setPrevScrollPos(currentScrollPos);
-      const visible = prevScrollPos > currentScrollPos;
-      const header = document.querySelector('.header');
-      if (header) {
-        header.classList.toggle('hide', !visible);
-      }
+      const scrollPosition = window.scrollY;
+      setShowHeader(scrollPosition < 100);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos]);
+  }, []);
   return (
     <>
       <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md">
-        <div className="  bg-primary    text-black ">
+        <div className= {showHeader ? 'block  bg-primary    text-black' : ' bg-primary    text-black hidden'} >
           <div className="container py-[2px]  ">
             <div className="grid grid-cols-1 md:grid-cols-3  items-center justify-between  font-bold">
               <p className="text-sm text-center  ">Email : berownservices@gmail.com</p>

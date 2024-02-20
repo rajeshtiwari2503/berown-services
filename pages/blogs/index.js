@@ -10,7 +10,7 @@ const blogs  = () => {
    
   return (
     <>
-       <div className="mt-12">
+       <div className="mt-32 md:mt-12">
        <Blogs />
        </div>
     </>

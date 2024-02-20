@@ -20,18 +20,20 @@ const contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-  
+    setIsLoading(true)
     emailjs
-      .sendForm('service_Fqwwace', 'template_ocqbg2i', form.current, {
+      .sendForm('service_fqwwace', 'template_ocqbg2i', form.current, {
         publicKey: '_CfyK7qSpPtYygV9T',
       })
       .then(
         () => {
           console.log('SUCCESS!');
-          
+          setMsg("Your message send successfully")
+          setIsLoading(false)
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setIsLoading(false)
            
         },
       );

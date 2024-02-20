@@ -33,7 +33,7 @@ const achivementsList = [
     },
     {
         metric: "Years",
-        value: "2",
+        value: "7",
         postfix:"+"
     },
 ]

@@ -73,7 +73,7 @@ const Services = ({ home }) => {
   };
   return (
     <>
-      <div className={`dark:bg-gray-900 dark:text-white py-10 ${home ? "" : "mt-14"}`}>
+      <div className={`dark:bg-gray-900 dark:text-white py-10 ${home ? "" : "mt-32 md:mt-0"}`}>
         <section data-aos="fade-up" className="container ">
           {home ? <><h3 className={`text-center font-bold py-3 mb-6 text-3xl  text-black`}>Discover the key features</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
