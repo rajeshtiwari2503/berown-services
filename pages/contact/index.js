@@ -20,20 +20,19 @@ const contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setIsLoading(true);
+  
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm('service_Fqwwace', 'template_ocqbg2i', form.current, {
+        publicKey: '_CfyK7qSpPtYygV9T',
       })
       .then(
         () => {
           console.log('SUCCESS!');
-          setMsg("Your message send Successfully")
-          setIsLoading(false);
+          
         },
         (error) => {
           console.log('FAILED...', error.text);
-          setIsLoading(false);
+           
         },
       );
   };
@@ -79,20 +78,20 @@ const contact = () => {
                 <div>Have a question, feedback, or just want to say hello? We'd love to hear from you! Use the following methods to get in touch with us:</div>
                 <div className='mt-2 font-bold text-3xl'>Contact Information</div>
                 <div className='mt-4'>
-                  <div className='p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>BEROWN SERVICES</div>
+                  <div className='p-4 bg-black/20 text-primary rounded-lg font-bold w-full'>BEROWN SERVICES</div>
                 </div>
                 <div className='mt-2 font-bold text-2xl'>Address:</div>
 
                 <div>
-                  <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>Noida</div>
+                  <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-full'>G 134 sec 63 noida 201301</div>
                 </div>
                 <div className='mt-2 font-bold text-2xl'>Email :</div>
-                <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>info@berown.com</div>
+                <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-full'> berownservices@gmail.com.com</div>
                 <div className='mt-2 font-bold text-2xl'>Contact No. :</div>
-                <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]'>70656475252</div>
+                <div className='mt-3 p-4 bg-black/20 text-primary rounded-lg font-bold w-full'>7065647525</div>
                 <div className='mt-2 font-bold text-2xl'>Social Media</div>
                 <div>Connect with us on social media for updates, news, and more:</div>
-                <div className="flex items-center gap-3 mt-4 p-4 bg-black/20 text-primary rounded-lg font-bold w-[200px]">
+                <div className="flex items-center gap-3 mt-4 p-4 bg-black/20 text-primary rounded-lg font-bold w-full">
                   <Link href="#">
                     <FaInstagram className="text-3xl text-primary" />
                   </Link>

@@ -90,15 +90,16 @@ const Footer = () => {
                 <br />
                 <div className="flex items-center gap-3 ">
                   <FaLocationArrow />
-                  <p className="text-sm">Noida</p>
+                  <p className="text-sm"> 
+  G 134 sec 63 noida 201301</p>
                 </div>
                 <div className="flex items-center gap-3 mt-3">
                   <FaEnvelope />
-                  <p>info@berown.com</p>
+                  <p> berownservices@gmail.com</p>
                 </div> 
                 <div className="flex items-center gap-3 mt-3">
                   <FaMobileAlt />
-                  <p>+91-706-564-75252</p>
+                  <p>+91-706-564-7525</p>
                 </div>
                 {/* social handles */}
 
