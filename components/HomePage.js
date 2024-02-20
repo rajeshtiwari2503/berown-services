@@ -100,7 +100,7 @@ const HomePage = () => {
   //https://sparetrade-bucket.s3.ap-south-1.amazonaws.com/videoHome.mp4-1704869755703-333177367
 
   return (
-    <div className=''>
+    <div className='mt-12 md:mt-0'>
           <div className="  sm:h-[980px] md:h-[680px]  relative bg-black bg-opacity-30">
         <video
           autoPlay

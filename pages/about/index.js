@@ -7,7 +7,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="container pt-14">
+      <div className="container mt-20 md:mt-0 pt-14">
         <div className="py-10 ">
 
           <h1 className="mt-8 md:mt-16 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">

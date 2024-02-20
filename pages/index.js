@@ -8,6 +8,7 @@ import Testimonial from '@/components/Testomonials'
 import Clients from '@/components/Clients'
 import WhatsApp from '@/components/Whatsapp'
 import AchivementSection from '@/components/Achivement'
+import Contact from '@/components/Contact'
 
 
 
@@ -29,10 +30,11 @@ export default function Home() {
       >
         <div >
           <HomePage />
-          <AchivementSection />
+         
           <Banner />
+          <AchivementSection />
           <Services home={true} />
-        
+        <Contact />
           {/* <Clients /> */}
           <Testimonial />
         

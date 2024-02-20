@@ -3,9 +3,9 @@ import React from "react";
 import {
   FaFacebook,
   FaInstagram,
-  FaLinkedin,
+  FaYoutube,
   FaLocationArrow,
-  FaMobileAlt,FaEnvelope
+  FaMobileAlt, FaEnvelope
 } from "react-icons/fa";
 
 
@@ -27,14 +27,14 @@ const FooterLinks = [
     title: "Blogs",
     link: "blogs",
   },
-  
+
   {
     title: "Contact us",
     link: "contact",
   },
 ];
 
-const ourServices=[
+const ourServices = [
   {
     title: "A C  ",
     link: "/services",
@@ -59,23 +59,25 @@ const ourServices=[
     title: "R O ",
     link: "/services",
   },
-  
+
   {
     title: "Geyser",
     link: "/services",
   }
   ,
   // {
-   
+
   //   title: "All services",
   //   link: "/services",
   // },
 ]
+
+// bg-gradient-to-r from-[#a7a7a9] to-[#FFFFFF] 
 const Footer = () => {
   return (
     <>
       <div className="dark:bg-gray-950     ">
-        <div className="bg-gradient-to-r from-[#a7a7a9] to-[#FFFFFF] ">
+        <div className="bg-black text-white ">
           <div className="container">
             {/* <div className="grid md:grid-cols-3 py-5 bg-white/80 backdrop-blur-sm rounded-t-xl"> */}
             <div className="grid md:grid-cols-3 py-5   rounded-t-xl">
@@ -85,18 +87,18 @@ const Footer = () => {
                   {/* TravelloGo */}
                 </h1>
                 <p className="text-sm mt-4">
-                At my company, we offer popular AC repair services that cater to a wide range of customers. Our team of experienced technicians are well-versed in diagnosing AC issues and providing efficient solutions to restore optimal functionality.
+                  At my company, we offer popular AC repair services that cater to a wide range of customers. Our team of experienced technicians are well-versed in diagnosing AC issues and providing efficient solutions to restore optimal functionality.
                 </p>
                 <br />
                 <div className="flex items-center gap-3 ">
                   <FaLocationArrow />
-                  <p className="text-sm"> 
-  G 134 sec 63 noida 201301</p>
+                  <p className="text-sm">
+                    G 134 sec 63 noida 201301</p>
                 </div>
                 <div className="flex items-center gap-3 mt-3">
                   <FaEnvelope />
                   <p> berownservices@gmail.com</p>
-                </div> 
+                </div>
                 <div className="flex items-center gap-3 mt-3">
                   <FaMobileAlt />
                   <p>+91-706-564-7525</p>
@@ -104,61 +106,72 @@ const Footer = () => {
                 {/* social handles */}
 
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
-                <div>
-                  <div className="py-8 px-4">
-                    <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
-                      Important Links
-                    </h1>
-                    <ul className="flex flex-col gap-3">
-                      {FooterLinks.map((link,index) => (
-                        <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200" key={index}>
-                          <Link
-                            href={link.link}
-                            onClick={() => window.scrollTo(0, 0)}
-                          >
-                            <span>&#11162;</span>
-                            <span>{link.title}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div className="py-8 px-4">
-                    <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
-                    Our Services
-                    </h1>
-                    <ul className="flex flex-col gap-3">
-                      {ourServices.map((link,index) => (
-                        <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200" key={index}>
-                          <Link
-                            href={link.link}
-                            onClick={() => window.scrollTo(0, 0)}
-                          >
-                            <span>&#11162;</span>
-                            <span>{link.title}</span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+              <div className="grid grid-cols-2 md:grid-cols-2">
+                <div className="    md:pl-10">
+                  <div>
+                    <div className="py-8 px-4">
+                      <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
+                        Important Links
+                      </h1>
+                      <ul className="flex flex-col gap-3">
+                        {FooterLinks.map((link, index) => (
+                          <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-white dark:text-gray-200" key={index}>
+                            <Link
+                              href={link.link}
+                              onClick={() => window.scrollTo(0, 0)}
+                            >
+                              <span>&#11162;</span>
+                              <span>{link.title}</span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div className="block md:hidden">
-                <div className="py-8 px-4">
+                  <div className="py-8 px-4">
                     <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
-                     Social Media
+                      Social Media
                     </h1>
-                    <div className="flex flex-col  gap-6">
-                  
-                    <Link href={"https://m.facebook.com/lybley/photos/a.361705534523649/702715043756028/?type=3&_rdrs"} target="_blank"><img  className="mt-4 " src="https://static.vecteezy.com/system/resources/previews/022/227/316/non_2x/facebook-logo-icon-free-png.png" alt="logo" height="40px" width="40px"  /></Link>  
-                   <Link href={"https://twitter.com/i/flow/login?redirect_after_login=%2FRLybley"} target="_blank"><img className="  " src="https://cdn-icons-png.flaticon.com/512/1051/1051382.png" alt="logo" height="40px" width="40px"  /></Link>  
-                   <Link   href={"https://in.linkedin.com/company/lybley"} target="_blank"><img className="    " src="https://img.icons8.com/?size=512&id=60443&format=png" alt="logo" height="40px" width="40px" /> </Link> 
-                   </div>
+                    <div className="flex flex-col text-white mt-8 gap-6">
+
+                      <Link href="https://www.instagram.com/berown.services?igsh=MWQxam90bGZpdjVrZg==" target="_blank">
+                        <FaInstagram className="text-3xl" />
+                      </Link>
+                      <Link href="https://www.facebook.com/profile.php?id=61556244007676&mibextid=LQQJ4d" target="_blank">
+                        <FaFacebook className="text-3xl" />
+                      </Link>
+                      <Link href="https://youtube.com/@BerownServices?si=7H8mYg4sVQIGxWGf" target="_blank">
+                        <FaYoutube className="text-3xl" />
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
-                <div className="">
+              <div>
+                <div>
+                  <div className="py-8 px-4 col-span-6">
+                    <h1 className="text-xl font-bold text-justify sm:text-left mb-3">
+                      Our Services
+                    </h1>
+                    <ul className=" gap-3 grid grid-cols-2">
+                      {ourServices.map((link, index) => (
+                        <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-white dark:text-gray-200" key={index}>
+                          <Link
+                            href={link.link}
+                            onClick={() => window.scrollTo(0, 0)}
+                          >
+                            <span>&#11162;</span>
+                            <span>{link.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* <div className="">
                   <div className="py-8 px-4">
                     <div className="rounded-xl  ">
                       <iframe
@@ -172,7 +185,7 @@ const Footer = () => {
                       ></iframe>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
               </div>
             </div>
@@ -182,18 +195,18 @@ const Footer = () => {
               </div>
               <div className="md:block hidden">
                 <div className="flex items-center gap-6  ">
-                  {/* <Link href="#">
+                  <Link href="https://www.instagram.com/berown.services?igsh=MWQxam90bGZpdjVrZg==" target="_blank">
                     <FaInstagram className="text-3xl" />
                   </Link>
-                  <Link href="#">
+                  <Link href="https://www.facebook.com/profile.php?id=61556244007676&mibextid=LQQJ4d" target="_blank">
                     <FaFacebook className="text-3xl" />
                   </Link>
-                  <Link href="#">
-                    <FaLinkedin className="text-3xl" />
-                  </Link> */}
-                                      <Link href={"https://m.facebook.com/lybley/photos/a.361705534523649/702715043756028/?type=3&_rdrs"} target="_blank"><img    src="https://static.vecteezy.com/system/resources/previews/022/227/316/non_2x/facebook-logo-icon-free-png.png" alt="logo" height="40px" width="40px"  /></Link>  
+                  <Link href="https://youtube.com/@BerownServices?si=7H8mYg4sVQIGxWGf" target="_blank">
+                    <FaYoutube className="text-3xl" />
+                  </Link>
+                  {/* <Link href={"https://m.facebook.com/lybley/photos/a.361705534523649/702715043756028/?type=3&_rdrs"} target="_blank"><img    src="https://static.vecteezy.com/system/resources/previews/022/227/316/non_2x/facebook-logo-icon-free-png.png" alt="logo" height="40px" width="40px"  /></Link>  
                    <Link href={"https://twitter.com/i/flow/login?redirect_after_login=%2FRLybley"} target="_blank"><img className=" rounded-circle" src="https://cdn-icons-png.flaticon.com/512/1051/1051382.png" alt="logo" height="40px" width="40px"  /></Link>  
-                   <Link   href={"https://in.linkedin.com/company/lybley"} target="_blank"><img className="  rounded-circle" src="https://img.icons8.com/?size=512&id=60443&format=png" alt="logo" height="40px" width="40px" /> </Link> 
+                   <Link   href={"https://in.linkedin.com/company/lybley"} target="_blank"><img className="  rounded-circle" src="https://img.icons8.com/?size=512&id=60443&format=png" alt="logo" height="40px" width="40px" /> </Link>  */}
                 </div>
               </div>
             </div>
