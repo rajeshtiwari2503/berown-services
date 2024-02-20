@@ -64,3 +64,17 @@
   }
    
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Adjust background color as needed */
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.header.hide {
+  transform: translateY(-100%);
+}

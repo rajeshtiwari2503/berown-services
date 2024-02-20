@@ -1,3 +1,4 @@
+import AchivementSection from "@/components/Achivement";
 import Blogs from "@/components/Blogs";
 import Location from "@/components/Location";
 import React from "react";
@@ -35,7 +36,7 @@ const About = () => {
             At Berown Services, we are a team of dedicated professionals passionate about providing top-quality repair services for homes and businesses alike. With years of experience in the industry, we have built a reputation for excellence, reliability, and unmatched customer satisfaction. Our team is committed to delivering personalized solutions tailored to meet the unique needs of each client. From plumbing and electrical to HVAC and appliance repair, we have the expertise and resources to handle any job with precision and care. At [Your Company Name], we're not just repairing homes – we're building lasting relationships based on trust, integrity, and exceptional service
           </p>
         </div>
-        <div className="mt-3 mb-20">
+        <div className="mt-3  ">
           <h1 className=" text-2xl font-bold mt-2">Our Team</h1>
           <div data-aos="fade-up" className="grid   grid-cols-1 md:grid-cols-3">
             <div className={`p-4 mt-4 shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg m-2`}>
@@ -86,6 +87,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <AchivementSection  margin={true}/>
       <Location />
       <Blogs />
     </>

@@ -57,14 +57,31 @@ const Header = ( ) => {
   const hrefggleMenu = () => {
     setShowMenu(!showMenu);
   };
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setPrevScrollPos(currentScrollPos);
+      const visible = prevScrollPos > currentScrollPos;
+      const header = document.querySelector('.header');
+      if (header) {
+        header.classList.toggle('hide', !visible);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
   return (
     <>
       <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md">
-        <div className="  bg-primary   text-black ">
+        <div className="  bg-primary    text-black ">
           <div className="container py-[2px]  ">
-            <div className="grid grid-cols-1 md:grid-cols-2  items-center justify-between  font-bold">
-              <p className="text-sm text-center  ">Email : info@berown.com</p>
-              <p className="text-sm  text-center">Mobile No. : +91 70656475252</p>
+            <div className="grid grid-cols-1 md:grid-cols-3  items-center justify-between  font-bold">
+              <p className="text-sm text-center  ">Email : berownservices@gmail.com</p>
+              <p className="text-sm text-center  ">Location : Delhi NCR</p>
+              <p className="text-sm  text-center">Mobile No. : +91 7065647525</p>
             </div>
           </div>
         </div>
