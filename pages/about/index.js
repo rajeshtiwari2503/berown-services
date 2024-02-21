@@ -33,7 +33,7 @@ const About = () => {
           </p>
           <h2 className=" text-2xl font-bold mt-12">Who We Are</h2>
           <p>
-            At Berown Services, we are a team of dedicated professionals passionate about providing top-quality repair services for homes and businesses alike. With years of experience in the industry, we have built a reputation for excellence, reliability, and unmatched customer satisfaction. Our team is committed to delivering personalized solutions tailored to meet the unique needs of each client. From plumbing and electrical to HVAC and appliance repair, we have the expertise and resources to handle any job with precision and care. At [Your Company Name], we're not just repairing homes – we're building lasting relationships based on trust, integrity, and exceptional service
+            At Berown Services, we are a team of dedicated professionals passionate about providing top-quality repair services for homes and businesses alike. With years of experience in the industry, we have built a reputation for excellence, reliability, and unmatched customer satisfaction. Our team is committed to delivering personalized solutions tailored to meet the unique needs of each client. From plumbing and electrical to HVAC and appliance repair, we have the expertise and resources to handle any job with precision and care. At Berown Services, we're not just repairing homes – we're building lasting relationships based on trust, integrity, and exceptional service
           </p>
         </div>
         <div className="mt-3  ">
