@@ -83,7 +83,7 @@ const Footer = () => {
             <div className="grid md:grid-cols-3 py-5   rounded-t-xl">
               <div className="py-8 ">
                 <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
-                  <Link href={"/"}> <img src={"/Logo.png"} alt="" className="max-h-[64px] rounded-lg" /></Link>
+                  <Link href={"/"}> <img src={"/Logo.png"} alt="" className="h-[50px] rounded-lg" /></Link>
                   {/* TravelloGo */}
                 </h1>
                 <p className="text-sm mt-4">

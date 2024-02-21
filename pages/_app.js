@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import WhatsApp from '@/components/Whatsapp';
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -21,6 +22,8 @@ export default function App({ Component, pageProps }) {
   return (<>
     <Header  />
     <Component   {...pageProps} />
+    <div className='whatsAppCss'><WhatsApp />
+          </div>
     <Footer />
   </>
   )

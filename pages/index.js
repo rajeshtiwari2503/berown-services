@@ -5,8 +5,7 @@ import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Services from './services'
 import Testimonial from '@/components/Testomonials'
-import Clients from '@/components/Clients'
-import WhatsApp from '@/components/Whatsapp'
+ 
 import AchivementSection from '@/components/Achivement'
 import Contact from '@/components/Contact'
 
@@ -35,12 +34,11 @@ export default function Home() {
           <AchivementSection />
           <Services home={true} />
         <Contact />
-          {/* <Clients /> */}
+        
           <Testimonial />
         
         </div>
-        <div className='whatsAppCss'><WhatsApp />
-          </div>
+        
       </main>
     </>
   )
