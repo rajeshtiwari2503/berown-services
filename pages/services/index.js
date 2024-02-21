@@ -73,7 +73,7 @@ const Services = ({ home }) => {
   };
   return (
     <>
-      <div className={`dark:bg-gray-900 dark:text-white py-10 ${home ? "" : "mt-32 md:mt-0"}`}>
+      <div className={`dark:bg-gray-900 dark:text-white py-10 ${home ? "" : "mt-32 md:mt-12"}`}>
         <section data-aos="fade-up" className="container ">
           {home ? <><h3 className={`text-center font-bold py-3 mb-6 text-3xl  text-black`}>Discover the key features</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
@@ -87,7 +87,7 @@ const Services = ({ home }) => {
                   <h1 className=" mt-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">
                     Our Services
                   </h1>
-                  <p className="ms-5 text-justify w-[full] md:w-[500px]">Fostering businesses with comprehensive IT solutions. Our services encompass cutting-edge development, tailored software solutions, and innovative technologies. We're dedicated to crafting scalable, efficient, and future-ready solutions that drive growth and success in today's dynamic digital landscape.</p>
+                  <p className="ms-5 text-justify w-[full] md:w-[500px]">At Berown Services, we are a team of dedicated professionals passionate about providing top-quality repair services for homes and businesses alike. With years of experience in the industry, we have built a reputation for excellence, reliability, and unmatched customer satisfaction. Our team is committed to delivering personalized solutions tailored to meet the unique needs of each client. From plumbing and electrical to HVAC and appliance repair, we have the expertise and resources to handle any job with precision and care. At Berown Services, we're not just repairing homes – we're building lasting relationships based on trust, integrity, and exceptional service</p>
                   <button className="ms-5 mt-3 bg-black text-white px-3 py-1  " onClick={handleScroll}>
                     Explore More
                   </button>
